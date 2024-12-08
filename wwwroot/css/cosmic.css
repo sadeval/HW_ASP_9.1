@@ -1,0 +1,33 @@
+﻿.cosmic-header {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #000;
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff0099, 0 0 15px #ff0099, 0 0 20px #ff0099;
+    animation: glow 2s infinite alternate;
+}
+
+.cosmic-text {
+    display: inline-block;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff0099, 0 0 15px #ff0099, 0 0 20px #ff0099;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff66ff, 0 0 40px #ff66ff, 0 0 50px #ff66ff;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
